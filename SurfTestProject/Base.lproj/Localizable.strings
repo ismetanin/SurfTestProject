@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  SurfTestProject
+
+  Created by Ivan Smetanin on 09.09.16.
+  Copyright © 2016 Ivan Smetanin. All rights reserved.
+*/
+
+"ENDING-0" = "";
+"ENDING-1" = "тысяч";
+"ENDING-2" = "миллион";
+"ENDING-3" = "миллиард";
+"ENDING-4" = "триллион";
+"ENDING-PLURAL-MASCULINE" = "ов";

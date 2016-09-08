@@ -19,7 +19,10 @@ class ViewController: UIViewController {
         }
         if let dict = myDict {
             for element in dict {
-                debugPrint(element.key)
+                let stringKey = element.key as! String
+                debugPrint(Int(stringKey)!)
+                debugPrint(NumberConverter.convert(Int(stringKey)!))
+//                NumberConverter.convert(Int(stringKey)!)
             }
         }
     }
