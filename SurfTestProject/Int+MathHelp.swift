@@ -26,4 +26,16 @@ extension Int {
         }
     }
     
+    /// Возвращает первую цифру в числе
+    func first() -> Int {
+        let numbersArray = self.description.characters.map{Int(String($0)) ?? 0}
+        if numbersArray.count > 1 { return numbersArray.first! }
+        else { return self }
+    }
+    
+    /// Возвращает количество цифер в числе
+    func count() -> Int {
+        return self.description.characters.map{Int(String($0)) ?? 0}.count
+    }
+    
 }

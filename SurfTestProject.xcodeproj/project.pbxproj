@@ -18,7 +18,6 @@
 		2CEE04911D81B4590006316F /* NumberConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEE04901D81B4590006316F /* NumberConverterTests.swift */; };
 		2CEE04951D81DAFB0006316F /* Int+MathHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEE04941D81DAFB0006316F /* Int+MathHelp.swift */; };
 		2CEE04971D81DB740006316F /* UtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEE04961D81DB740006316F /* UtilsTests.swift */; };
-		2CEE04991D81F2390006316F /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEE04981D81F2390006316F /* Numbers.swift */; };
 		2CEE049E1D8214020006316F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CEE04A01D8214020006316F /* Localizable.strings */; };
 		2CEE04A41D8214310006316F /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEE04A31D8214310006316F /* String+Localization.swift */; };
 /* End PBXBuildFile section */
@@ -49,9 +48,6 @@
 		2CEE04901D81B4590006316F /* NumberConverterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberConverterTests.swift; sourceTree = "<group>"; };
 		2CEE04941D81DAFB0006316F /* Int+MathHelp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+MathHelp.swift"; sourceTree = "<group>"; };
 		2CEE04961D81DB740006316F /* UtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsTests.swift; sourceTree = "<group>"; };
-		2CEE04981D81F2390006316F /* Numbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
-		2CEE049A1D8213D60006316F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
-		2CEE049B1D8213D60006316F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		2CEE049F1D8214020006316F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2CEE04A31D8214310006316F /* String+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,7 +95,6 @@
 				2CEE046B1D81AE0C0006316F /* ViewController.swift */,
 				2CEE04941D81DAFB0006316F /* Int+MathHelp.swift */,
 				2CEE048E1D81B3FC0006316F /* NumberConverter.swift */,
-				2CEE04981D81F2390006316F /* Numbers.swift */,
 				2CEE046D1D81AE0C0006316F /* Main.storyboard */,
 				2CEE04701D81AE0C0006316F /* Assets.xcassets */,
 				2CEE04721D81AE0C0006316F /* LaunchScreen.storyboard */,
@@ -228,7 +223,6 @@
 			files = (
 				2CEE046C1D81AE0C0006316F /* ViewController.swift in Sources */,
 				2CEE046A1D81AE0C0006316F /* AppDelegate.swift in Sources */,
-				2CEE04991D81F2390006316F /* Numbers.swift in Sources */,
 				2CEE04A41D8214310006316F /* String+Localization.swift in Sources */,
 				2CEE04951D81DAFB0006316F /* Int+MathHelp.swift in Sources */,
 				2CEE048F1D81B3FC0006316F /* NumberConverter.swift in Sources */,
@@ -260,7 +254,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2CEE046E1D81AE0C0006316F /* Base */,
-				2CEE049A1D8213D60006316F /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -269,7 +262,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2CEE04731D81AE0C0006316F /* Base */,
-				2CEE049B1D8213D60006316F /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
