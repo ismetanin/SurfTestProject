@@ -29,9 +29,7 @@ class NumbersViewController: UIViewController {
     
     private func initViews() {
         initTableView()
-        getNumbers { [weak self] items in
-            debugPrint("tut")
-            self?.initAdapter(items) }
+        getNumbers { [weak self] items in self?.initAdapter(items) }
     }
     
     private func getNumbers(completion: StringArrayBlock) {

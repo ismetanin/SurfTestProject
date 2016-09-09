@@ -35,12 +35,12 @@ class UtilsTests: XCTestCase {
     }
     
     func legthTest() {
-        XCTAssertEqual(2, 1.count())
-        XCTAssertEqual(2, 11.count())
-        XCTAssertEqual(3, 554.count())
-        XCTAssertEqual(4, 1110.count())
-        XCTAssertEqual(5, 54311.count())
-        XCTAssertEqual(6, 346311.count())
-        XCTAssertEqual(7, 5311231.count())
+        XCTAssertEqual(2, 1.length())
+        XCTAssertEqual(2, 11.length())
+        XCTAssertEqual(3, 554.length())
+        XCTAssertEqual(4, 1110.length())
+        XCTAssertEqual(5, 54311.length())
+        XCTAssertEqual(6, 346311.length())
+        XCTAssertEqual(7, 5311231.length())
     }
 }

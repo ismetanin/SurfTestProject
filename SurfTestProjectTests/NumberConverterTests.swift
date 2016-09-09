@@ -31,5 +31,6 @@ class NumberConverterTests: XCTestCase {
         XCTAssertEqual(NumberConverter.convert(903000000000), "девятьсот три миллиарда")
         XCTAssertEqual(NumberConverter.convert(903000000001), "девятьсот три миллиарда один")
         XCTAssertEqual(NumberConverter.convert(903000010001), "девятьсот три миллиарда десять тысяч один")
+        XCTAssertEqual(NumberConverter.convert(4404), "четыре тысячи четыреста четыре")
     }
 }
