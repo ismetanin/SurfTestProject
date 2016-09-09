@@ -1,0 +1,10 @@
+framework module NumberConverter {
+  umbrella header "NumberConverter.h"
+
+  export *
+  module * { export * }
+}
+
+module NumberConverter.Swift {
+    header "NumberConverter-Swift.h"
+}

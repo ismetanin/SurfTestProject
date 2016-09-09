@@ -37,7 +37,7 @@ class NumbersService: Service {
         if let items = response as? [Int] {
             var numbers = [String]()
             let filtredItems = filterNumbers(items)
-            for item in filtredItems { numbers += [NumberConverter.convert(item)] }
+            for item in filtredItems { numbers += [Converter.convert(item)] }
             performOnMainThread{ sucessBlock(numbers) }
         }
     }
