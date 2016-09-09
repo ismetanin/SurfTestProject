@@ -34,7 +34,7 @@ extension Int {
     }
     
     /// Возвращает количество цифер в числе
-    func count() -> Int {
+    func length() -> Int {
         return self.description.characters.map{Int(String($0)) ?? 0}.count
     }
     

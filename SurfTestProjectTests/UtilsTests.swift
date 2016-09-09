@@ -34,7 +34,7 @@ class UtilsTests: XCTestCase {
 
     }
     
-    func countTest() {
+    func legthTest() {
         XCTAssertEqual(2, 1.count())
         XCTAssertEqual(2, 11.count())
         XCTAssertEqual(3, 554.count())

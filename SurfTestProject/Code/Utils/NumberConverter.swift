@@ -8,9 +8,9 @@
 
 import Foundation
 
-final class NumberConverter: NSObject {
+public final class NumberConverter: NSObject {
     
-    static func convert(number: Int) -> String {
+    public static func convert(number: Int) -> String {
         if number == 0 { return "NULL".localized }
         var number = number
         let lenghtOfNumber = number.description.characters.count

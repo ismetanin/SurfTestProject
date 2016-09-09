@@ -22,26 +22,33 @@ class NumbersViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var myDict: NSDictionary?
-        if let path = NSBundle.mainBundle().pathForResource("input", ofType: "plist") {
-            myDict = NSDictionary(contentsOfFile: path)
-        }
-        var items = [String]()
-        if let dict = myDict {
-            for element in dict {
-                let stringKey = element.key as! String
-                items += [NumberConverter.convert(Int(stringKey)!)]
-            }
-        }
-        debugPrint(items)
+        initViews()
+    }
+
+    // MARK: Private helpers
+    
+    private func initViews() {
+        initTableView()
+        getNumbers { [weak self] items in
+            debugPrint("tut")
+            self?.initAdapter(items) }
+    }
+    
+    private func getNumbers(completion: StringArrayBlock) {
+        ServiceLayer.serviceLayer.numbersService.getNumbers { items in completion(items) }
+    }
+    
+    private func initAdapter(items: [String]) {
         adapter = NumbersTableViewAdapter(forTableView: tableView, items: items)
         tableView.delegate = adapter
         tableView.dataSource = adapter
+        tableView.reloadData()
+    }
+    
+    private func initTableView() {
         tableView.sizeToFit()
         tableView.tableFooterView = UIView()
-        tableView.reloadData()
         tableView.estimatedRowHeight = 44.0
         tableView.rowHeight = UITableViewAutomaticDimension
     }
-
 }
